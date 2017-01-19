@@ -1,10 +1,10 @@
-对讲服务接入说明.md
-
+对讲服务接入说明iOS V0.1
 
 
 ##一、工程配置说明
 
-###1.yinru 
+###1.新建工程，引入EasyconnTalkie.framework 
+###2.添加关联库：AFNetworking
 
 ##二、接口说明
 
