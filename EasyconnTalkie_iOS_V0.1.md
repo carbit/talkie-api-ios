@@ -4,7 +4,7 @@
 ##一、工程配置说明
 
 ###1.新建工程，引入EasyconnTalkie.framework 
-###2.添加关联库：AFNetworking
+###2.添加关联库：AFNetworking、JSONModel
 
 ##二、接口说明
 
