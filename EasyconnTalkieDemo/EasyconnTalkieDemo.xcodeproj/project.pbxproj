@@ -15,8 +15,8 @@
 		793C5A741E30B3C800692CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793C5A721E30B3C800692CA4 /* LaunchScreen.storyboard */; };
 		793C5A7F1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A7E1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m */; };
 		793C5A8A1E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A891E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m */; };
-		7987BBDC1E321BBC000F5470 /* EasyconnTalkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7987BBDB1E321BBC000F5470 /* EasyconnTalkie.framework */; };
-		7987BBDD1E321BBC000F5470 /* EasyconnTalkie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7987BBDB1E321BBC000F5470 /* EasyconnTalkie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		799EE7D81E3227B5000E5DD7 /* EasyconnTalkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799EE7D71E3227B5000E5DD7 /* EasyconnTalkie.framework */; };
+		799EE7D91E3227B5000E5DD7 /* EasyconnTalkie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 799EE7D71E3227B5000E5DD7 /* EasyconnTalkie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7987BBDE1E321BBC000F5470 /* Embed Frameworks */ = {
+		799EE7D41E3226AC000E5DD7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7987BBDD1E321BBC000F5470 /* EasyconnTalkie.framework in Embed Frameworks */,
+				799EE7D91E3227B5000E5DD7 /* EasyconnTalkie.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,7 @@
 		793C5A851E30B3C800692CA4 /* EasyconnTalkieDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyconnTalkieDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		793C5A891E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyconnTalkieDemoUITests.m; sourceTree = "<group>"; };
 		793C5A8B1E30B3C800692CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7987BBDB1E321BBC000F5470 /* EasyconnTalkie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyconnTalkie.framework; sourceTree = "<group>"; };
+		799EE7D71E3227B5000E5DD7 /* EasyconnTalkie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyconnTalkie.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7987BBDC1E321BBC000F5470 /* EasyconnTalkie.framework in Frameworks */,
+				799EE7D81E3227B5000E5DD7 /* EasyconnTalkie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +99,7 @@
 		793C5A521E30B3C800692CA4 = {
 			isa = PBXGroup;
 			children = (
+				799EE7D71E3227B5000E5DD7 /* EasyconnTalkie.framework */,
 				793C5A5D1E30B3C800692CA4 /* EasyconnTalkieDemo */,
 				793C5A7D1E30B3C800692CA4 /* EasyconnTalkieDemoTests */,
 				793C5A881E30B3C800692CA4 /* EasyconnTalkieDemoUITests */,
@@ -162,7 +163,6 @@
 		793C5A9D1E30C3E300692CA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7987BBDB1E321BBC000F5470 /* EasyconnTalkie.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 				793C5A571E30B3C800692CA4 /* Sources */,
 				793C5A581E30B3C800692CA4 /* Frameworks */,
 				793C5A591E30B3C800692CA4 /* Resources */,
-				7987BBDE1E321BBC000F5470 /* Embed Frameworks */,
+				799EE7D41E3226AC000E5DD7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,12 +450,14 @@
 		793C5A8F1E30B3C800692CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G4GCKWM2QZ;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../EasyconnTalkie.framework\"",
 					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/EasyconnTalkie.framework\"",
 				);
 				INFOPLIST_FILE = EasyconnTalkieDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -469,12 +471,14 @@
 		793C5A901E30B3C800692CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G4GCKWM2QZ;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../EasyconnTalkie.framework\"",
 					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/EasyconnTalkie.framework\"",
 				);
 				INFOPLIST_FILE = EasyconnTalkieDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
