@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		793C5A601E30B3C800692CA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A5F1E30B3C800692CA4 /* main.m */; };
+		793C5A631E30B3C800692CA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A621E30B3C800692CA4 /* AppDelegate.m */; };
+		793C5A661E30B3C800692CA4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A651E30B3C800692CA4 /* RootViewController.m */; };
+		793C5A6F1E30B3C800692CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793C5A6D1E30B3C800692CA4 /* Main.storyboard */; };
+		793C5A711E30B3C800692CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793C5A701E30B3C800692CA4 /* Assets.xcassets */; };
+		793C5A741E30B3C800692CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793C5A721E30B3C800692CA4 /* LaunchScreen.storyboard */; };
+		793C5A7F1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A7E1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m */; };
+		793C5A8A1E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A891E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m */; };
+		7987BBDC1E321BBC000F5470 /* EasyconnTalkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7987BBDB1E321BBC000F5470 /* EasyconnTalkie.framework */; };
+		7987BBDD1E321BBC000F5470 /* EasyconnTalkie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7987BBDB1E321BBC000F5470 /* EasyconnTalkie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		793C5A7B1E30B3C800692CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793C5A531E30B3C800692CA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793C5A5A1E30B3C800692CA4;
+			remoteInfo = EasyconnTalkieDemo;
+		};
+		793C5A861E30B3C800692CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793C5A531E30B3C800692CA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793C5A5A1E30B3C800692CA4;
+			remoteInfo = EasyconnTalkieDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7987BBDE1E321BBC000F5470 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7987BBDD1E321BBC000F5470 /* EasyconnTalkie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		793C5A5B1E30B3C800692CA4 /* EasyconnTalkieDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyconnTalkieDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		793C5A5F1E30B3C800692CA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		793C5A611E30B3C800692CA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		793C5A621E30B3C800692CA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		793C5A641E30B3C800692CA4 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		793C5A651E30B3C800692CA4 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		793C5A6E1E30B3C800692CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		793C5A701E30B3C800692CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		793C5A731E30B3C800692CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		793C5A751E30B3C800692CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793C5A7A1E30B3C800692CA4 /* EasyconnTalkieDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyconnTalkieDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		793C5A7E1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyconnTalkieDemoTests.m; sourceTree = "<group>"; };
+		793C5A801E30B3C800692CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793C5A851E30B3C800692CA4 /* EasyconnTalkieDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyconnTalkieDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		793C5A891E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyconnTalkieDemoUITests.m; sourceTree = "<group>"; };
+		793C5A8B1E30B3C800692CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7987BBDB1E321BBC000F5470 /* EasyconnTalkie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyconnTalkie.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		793C5A581E30B3C800692CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7987BBDC1E321BBC000F5470 /* EasyconnTalkie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C5A771E30B3C800692CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C5A821E30B3C800692CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		793C5A521E30B3C800692CA4 = {
+			isa = PBXGroup;
+			children = (
+				793C5A5D1E30B3C800692CA4 /* EasyconnTalkieDemo */,
+				793C5A7D1E30B3C800692CA4 /* EasyconnTalkieDemoTests */,
+				793C5A881E30B3C800692CA4 /* EasyconnTalkieDemoUITests */,
+				793C5A5C1E30B3C800692CA4 /* Products */,
+				793C5A9D1E30C3E300692CA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		793C5A5C1E30B3C800692CA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				793C5A5B1E30B3C800692CA4 /* EasyconnTalkieDemo.app */,
+				793C5A7A1E30B3C800692CA4 /* EasyconnTalkieDemoTests.xctest */,
+				793C5A851E30B3C800692CA4 /* EasyconnTalkieDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		793C5A5D1E30B3C800692CA4 /* EasyconnTalkieDemo */ = {
+			isa = PBXGroup;
+			children = (
+				793C5A611E30B3C800692CA4 /* AppDelegate.h */,
+				793C5A621E30B3C800692CA4 /* AppDelegate.m */,
+				793C5A641E30B3C800692CA4 /* RootViewController.h */,
+				793C5A651E30B3C800692CA4 /* RootViewController.m */,
+				793C5A6D1E30B3C800692CA4 /* Main.storyboard */,
+				793C5A701E30B3C800692CA4 /* Assets.xcassets */,
+				793C5A721E30B3C800692CA4 /* LaunchScreen.storyboard */,
+				793C5A751E30B3C800692CA4 /* Info.plist */,
+				793C5A5E1E30B3C800692CA4 /* Supporting Files */,
+			);
+			path = EasyconnTalkieDemo;
+			sourceTree = "<group>";
+		};
+		793C5A5E1E30B3C800692CA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				793C5A5F1E30B3C800692CA4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		793C5A7D1E30B3C800692CA4 /* EasyconnTalkieDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				793C5A7E1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m */,
+				793C5A801E30B3C800692CA4 /* Info.plist */,
+			);
+			path = EasyconnTalkieDemoTests;
+			sourceTree = "<group>";
+		};
+		793C5A881E30B3C800692CA4 /* EasyconnTalkieDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				793C5A891E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m */,
+				793C5A8B1E30B3C800692CA4 /* Info.plist */,
+			);
+			path = EasyconnTalkieDemoUITests;
+			sourceTree = "<group>";
+		};
+		793C5A9D1E30C3E300692CA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7987BBDB1E321BBC000F5470 /* EasyconnTalkie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		793C5A5A1E30B3C800692CA4 /* EasyconnTalkieDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793C5A8E1E30B3C800692CA4 /* Build configuration list for PBXNativeTarget "EasyconnTalkieDemo" */;
+			buildPhases = (
+				793C5A571E30B3C800692CA4 /* Sources */,
+				793C5A581E30B3C800692CA4 /* Frameworks */,
+				793C5A591E30B3C800692CA4 /* Resources */,
+				7987BBDE1E321BBC000F5470 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyconnTalkieDemo;
+			productName = EasyconnTalkieDemo;
+			productReference = 793C5A5B1E30B3C800692CA4 /* EasyconnTalkieDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		793C5A791E30B3C800692CA4 /* EasyconnTalkieDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793C5A911E30B3C800692CA4 /* Build configuration list for PBXNativeTarget "EasyconnTalkieDemoTests" */;
+			buildPhases = (
+				793C5A761E30B3C800692CA4 /* Sources */,
+				793C5A771E30B3C800692CA4 /* Frameworks */,
+				793C5A781E30B3C800692CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				793C5A7C1E30B3C800692CA4 /* PBXTargetDependency */,
+			);
+			name = EasyconnTalkieDemoTests;
+			productName = EasyconnTalkieDemoTests;
+			productReference = 793C5A7A1E30B3C800692CA4 /* EasyconnTalkieDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		793C5A841E30B3C800692CA4 /* EasyconnTalkieDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793C5A941E30B3C800692CA4 /* Build configuration list for PBXNativeTarget "EasyconnTalkieDemoUITests" */;
+			buildPhases = (
+				793C5A811E30B3C800692CA4 /* Sources */,
+				793C5A821E30B3C800692CA4 /* Frameworks */,
+				793C5A831E30B3C800692CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				793C5A871E30B3C800692CA4 /* PBXTargetDependency */,
+			);
+			name = EasyconnTalkieDemoUITests;
+			productName = EasyconnTalkieDemoUITests;
+			productReference = 793C5A851E30B3C800692CA4 /* EasyconnTalkieDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		793C5A531E30B3C800692CA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = carbit;
+				TargetAttributes = {
+					793C5A5A1E30B3C800692CA4 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = G4GCKWM2QZ;
+						ProvisioningStyle = Automatic;
+					};
+					793C5A791E30B3C800692CA4 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 793C5A5A1E30B3C800692CA4;
+					};
+					793C5A841E30B3C800692CA4 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 793C5A5A1E30B3C800692CA4;
+					};
+				};
+			};
+			buildConfigurationList = 793C5A561E30B3C800692CA4 /* Build configuration list for PBXProject "EasyconnTalkieDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 793C5A521E30B3C800692CA4;
+			productRefGroup = 793C5A5C1E30B3C800692CA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				793C5A5A1E30B3C800692CA4 /* EasyconnTalkieDemo */,
+				793C5A791E30B3C800692CA4 /* EasyconnTalkieDemoTests */,
+				793C5A841E30B3C800692CA4 /* EasyconnTalkieDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		793C5A591E30B3C800692CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793C5A741E30B3C800692CA4 /* LaunchScreen.storyboard in Resources */,
+				793C5A711E30B3C800692CA4 /* Assets.xcassets in Resources */,
+				793C5A6F1E30B3C800692CA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C5A781E30B3C800692CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C5A831E30B3C800692CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		793C5A571E30B3C800692CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793C5A631E30B3C800692CA4 /* AppDelegate.m in Sources */,
+				793C5A601E30B3C800692CA4 /* main.m in Sources */,
+				793C5A661E30B3C800692CA4 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C5A761E30B3C800692CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793C5A7F1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793C5A811E30B3C800692CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793C5A8A1E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		793C5A7C1E30B3C800692CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793C5A5A1E30B3C800692CA4 /* EasyconnTalkieDemo */;
+			targetProxy = 793C5A7B1E30B3C800692CA4 /* PBXContainerItemProxy */;
+		};
+		793C5A871E30B3C800692CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793C5A5A1E30B3C800692CA4 /* EasyconnTalkieDemo */;
+			targetProxy = 793C5A861E30B3C800692CA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		793C5A6D1E30B3C800692CA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793C5A6E1E30B3C800692CA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		793C5A721E30B3C800692CA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793C5A731E30B3C800692CA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		793C5A8C1E30B3C800692CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		793C5A8D1E30B3C800692CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		793C5A8F1E30B3C800692CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G4GCKWM2QZ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../EasyconnTalkie.framework\"",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = EasyconnTalkieDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbit.EasyconnTalkieDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		793C5A901E30B3C800692CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G4GCKWM2QZ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../EasyconnTalkie.framework\"",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = EasyconnTalkieDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbit.EasyconnTalkieDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		793C5A921E30B3C800692CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyconnTalkieDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbit.EasyconnTalkieDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyconnTalkieDemo.app/EasyconnTalkieDemo";
+			};
+			name = Debug;
+		};
+		793C5A931E30B3C800692CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyconnTalkieDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbit.EasyconnTalkieDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyconnTalkieDemo.app/EasyconnTalkieDemo";
+			};
+			name = Release;
+		};
+		793C5A951E30B3C800692CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EasyconnTalkieDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbit.EasyconnTalkieDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EasyconnTalkieDemo;
+			};
+			name = Debug;
+		};
+		793C5A961E30B3C800692CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EasyconnTalkieDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbit.EasyconnTalkieDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EasyconnTalkieDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		793C5A561E30B3C800692CA4 /* Build configuration list for PBXProject "EasyconnTalkieDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793C5A8C1E30B3C800692CA4 /* Debug */,
+				793C5A8D1E30B3C800692CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793C5A8E1E30B3C800692CA4 /* Build configuration list for PBXNativeTarget "EasyconnTalkieDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793C5A8F1E30B3C800692CA4 /* Debug */,
+				793C5A901E30B3C800692CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793C5A911E30B3C800692CA4 /* Build configuration list for PBXNativeTarget "EasyconnTalkieDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793C5A921E30B3C800692CA4 /* Debug */,
+				793C5A931E30B3C800692CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793C5A941E30B3C800692CA4 /* Build configuration list for PBXNativeTarget "EasyconnTalkieDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793C5A951E30B3C800692CA4 /* Debug */,
+				793C5A961E30B3C800692CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 793C5A531E30B3C800692CA4 /* Project object */;
+}

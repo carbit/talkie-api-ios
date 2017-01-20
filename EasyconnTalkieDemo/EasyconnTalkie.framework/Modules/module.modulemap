@@ -1,0 +1,10 @@
+framework module EasyconnTalkie {
+  umbrella header "EasyconnTalkie.h"
+
+  export *
+  module * { export * }
+}
+
+module EasyconnTalkie.Swift {
+    header "EasyconnTalkie-Swift.h"
+}
