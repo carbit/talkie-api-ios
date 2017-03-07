@@ -27,7 +27,7 @@
  *  @param roomID  房间号
  *  @param callback 上线结果回调,error:错误信息，为nil时表示成功
  */
-- (void)online:(void(^)(NSError *error))callback;
+- (void)online:(NSString *)roomID callback:(void(^)(NSError *error))callback;
 ```
 
 
