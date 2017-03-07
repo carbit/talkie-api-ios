@@ -104,7 +104,7 @@
         case 1001:
         {
             [self addShowMessage:@"上线中..."];
-            [[TalkieManager shareInstance] online:^(NSError *error) {
+            [[TalkieManager shareInstance] online:@"1" callback:^(NSError *error) {
                 if (!error) {
                     [self addShowMessage:@"上线成功！"];
                 }
