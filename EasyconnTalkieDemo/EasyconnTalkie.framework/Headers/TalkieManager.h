@@ -92,4 +92,10 @@ typedef enum{
  */
 - (void)listeningConnectState:(void(^)(ConnectState state))callback;
 
+/**
+ *  设置对讲播放的音量
+ *  @param volume 音量值，取值范围[0,1]，设置其他值时无效
+ */
+- (void)setTalkieVolume:(CGFloat)volume;
+
 @end

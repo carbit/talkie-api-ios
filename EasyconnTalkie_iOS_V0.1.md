@@ -110,3 +110,12 @@
  */
 - (void)listeningConnectState:(void(^)(ConnectState state))callback;
 ```
+
+###10.监听对讲连接状态
+```Objective-C
+/**
+*  设置对讲播放的音量
+*  @param volume 音量值，取值范围[0,1]，设置其他值时无效
+*/
+- (void)setTalkieVolume:(CGFloat)volume;
+```
