@@ -111,7 +111,7 @@
 - (void)listeningConnectState:(void(^)(ConnectState state))callback;
 ```
 
-###10.监听对讲连接状态
+###11.设置对讲播放的音量
 ```Objective-C
 /**
 *  设置对讲播放的音量
