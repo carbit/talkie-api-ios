@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  EasyconnTalkieDemo
+//
+//  Created by ch on 2017/6/7.
+//  Copyright © 2017年 carbit. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "GlobalEntity.h"
+#import <EasyconnTalkie/EDTalkieManager.h>
+#import "SVProgressHUD.h"
+
+// weak strong dance
+#define weakify_self   __weak typeof(self) weakSelf = self;
+#define strongify_self __strong typeof(self) self = weakSelf;
+
+#endif /* PrefixHeader_pch */

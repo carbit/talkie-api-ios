@@ -16,5 +16,5 @@ FOUNDATION_EXPORT const unsigned char EasyconnTalkieVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <EasyconnTalkie/PublicHeader.h>
 
-#import "TalkieManager.h"
+#import "EDTalkieManager.h"
 
