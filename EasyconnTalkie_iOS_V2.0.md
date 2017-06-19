@@ -6,9 +6,9 @@
 
 [一、SDK接入](#SDK接入)
 
-[二、SDK接口方法说明](#SDK接口说明)
+[二、SDK接口方法说明](#SDK接口方法说明)
 
-[三、SDK接口代理说明](#SDK接口说明)
+[三、SDK接口代理说明](#SDK接口代理说明)
 
 [四、类说明](#类说明)
 
@@ -31,7 +31,7 @@
 + (void)setLog:(BOOL)log;
 ```
 
-<h2 id="SDK接口说明">二、SDK接口说明</h2>
+<h2 id="SDK接口方法说明">二、SDK接口方法说明</h2>
 
 调用示例
 [[EDTalkieManager shareInstance] 方法名];
