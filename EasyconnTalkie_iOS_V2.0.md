@@ -1,9 +1,10 @@
-#亿连对讲 SDK iOS 接入说明
+亿连对讲 SDK iOS 接入说明
 
 
 ---------------
-##目录
-[一、配置开发环境和SDK接入](#配置开发环境和SDK接入)
+目录
+
+[一、SDK接入](#SDK接入)
 
 [二、SDK接口方法说明](#SDK接口说明)
 
@@ -13,7 +14,7 @@
 
 ------------------
 
-<h2 id="配置开发环境和SDK接入">一、配置开发环境和SDK接入</h2>
+<h2 id="SDK接入">一、SDK接入</h2>
 
 将EasyconnTalkie.framework添加到工程中
 
@@ -332,8 +333,8 @@
 *  @param openId  用户openId
 */
 - (void)onMemberStartSpeak:(NSString*)openId;
-其它用户结束发言事件
 ```
+其它用户结束发言事件
 ```Objective-C
 /**
 *  其它用户结束发言事件
