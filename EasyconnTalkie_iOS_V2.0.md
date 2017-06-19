@@ -15,7 +15,7 @@
 
 <h2 id="配置开发环境和SDK接入">一、配置开发环境和SDK接入</h2>
 
-在iOS工程中加入EasyconnTalkie.framework同时更改相关配置。
+将EasyconnTalkie.framework添加到工程中
 
 在pch文件中引入
 ```Objective-C
@@ -30,12 +30,10 @@
 + (void)setLog:(BOOL)log;
 ```
 
-###新建工程，引入EasyconnTalkie.framework 
-
 <h2 id="SDK接口说明">二、SDK接口说明</h2>
 
 调用示例
-[[EDTalkieManager shareInstance] 主法名];
+[[EDTalkieManager shareInstance] 方法名];
 
 1、 初始化
 ```Objective-C
@@ -258,86 +256,181 @@
 <h2 id="SDK接口代理说明">三、SDK接口代理说明</h2>
 
 在要调用的类引进EDTalkieManagerSelfDelegate,EDTalkieManagerMemberDelegate
+
 **Tips：selfDelegate针对用户自己的代理，memberDelegate处理房间成员的代理**
 
-*selfDelegate*
+<h3>selfDelegate</h3>
 
 停止说话时回调
 ```Objective-C
+/**
+*  停止说话时回调
+*
+*  @param stopSpeakType  停止的type
+*/
 - (void)onSelfStopSpeak:(StopSpeakType)stopSpeakType;
 ```
 自己的角色被改变时回调
 ```Objective-C
+/**
+*  自己的角色被改变时回调
+*
+*  @param roomRole  角色
+*/
 - (void)onSelfRoleChange:(RoomRole)roomRole;
 ```
 自己被踢出当前房间时回调
 ```Objective-C
+/**
+*  自己被踢出当前房间时回调
+*
+*/
 - (void)onSelfKickOut;
 ```
-//自己被禁言时回调
+自己被禁言时回调
 ```Objective-C
+/**
+*  自己被禁言时回调
+*
+*/
 - (void)onSelfSilenced:(NSInteger)hour;
 ```
 自己恢复禁言时回调
 ```Objective-C
+/**
+*  自己恢复禁言时回调
+*
+*/
 - (void)onSelfUnSilence;
 ```
-对讲服务连接成功后回调 表示可以正常收听语音消息
+对讲服务连接成功后回调
 ```Objective-C
+/**
+*  对讲服务连接成功后回调 表示可以正常收听语音消息
+*
+*  @param onlineSize  房间在线人数
+*  @param totalSize  房间总人数
+*/
 - (void)onTalkieServerConnectedOnlineSize:(NSInteger)onlineSize totalSize:(NSInteger)totalSize;
 ```
 对讲服务断开后回调
 ```Objective-C
-//对讲服务断开后回调 表示自己已离线（无法收听语音消息）如果是offline或logout或登录冲突则不会自动连接 需手动执行online操作才能再次连接
+/**
+*  对讲服务断开后回调 表示自己已离线（无法收听语音消息）如果是offline或logout或登录冲突则不会自动连接 需手动执行online操作才能再次连接
+*
+*/
 - (void)onTalkieServerDisconnected;
 ```
 
-*memberDelegate*
+<h3>memberDelegate</h3>
 
 其它用户开始发言事件
 ```Objective-C
+/**
+*  其它用户开始发言事件
+*
+*  @param openId  用户openId
+*/
 - (void)onMemberStartSpeak:(NSString*)openId;
 其它用户结束发言事件
 ```
 ```Objective-C
+/**
+*  其它用户结束发言事件
+*
+*  @param openId  用户openId
+*/
 - (void)onMemberStopSpeak:(NSString*)openId;
 ```
 其它用户位置变更事件
 ```Objective-C
+/**
+*  其它用户位置变更事件
+*
+*  @param openId  用户openId
+*  @param lat  纬度
+*  @param lon  经度
+*  @param speed  速度
+*  @param direction  方向
+*/
 - (void)onMemberLocationChangeOpenId:(NSString*)openId latitude:(CGFloat)lat longitude:(CGFloat)lon speed:(CGFloat)speed direction:(CGFloat)direction;
 ```
 其他用户角色改变时
 ```Objective-C
+/**
+*  其他用户角色改变时
+*
+*  @param openId  用户openId
+*  @param roomRole  角色
+*/
 - (void)onMemberRoleChangeOpenId:(NSString*)openId roomRole:(RoomRole)roomRole;
 ```
 其他用户上线时
 ```Objective-C
+/**
+*  其他用户上线时
+*
+*  @param openId  用户openId
+*  @param onlineSize  房间在线人数
+*  @param totalSize  房间总人数
+*/
 - (void)onMemberOnlineOpenId:(NSString*)openId onlineSize:(NSInteger)onlineSize totalSize:(NSInteger)totalSize;
 ```
 其他用户下线时
 ```Objective-C
+/**
+*  其他用户下线时
+*
+*  @param openId  用户openId
+*  @param onlineSize  房间在线人数
+*  @param totalSize  房间总人数
+*/
 - (void)onMemberOfflineOpenId:(NSString*)openId onlineSize:(NSInteger)onlineSize totalSize:(NSInteger)totalSize;
 ```
 其他用户退出房间时
 ```Objective-C
+/**
+*  其他用户退出房间时
+*
+*  @param openId  用户openId
+*  @param onlineSize  房间在线人数
+*  @param totalSize  房间总人数
+*/
 - (void)onMemberLeaveOpenId:(NSString*)openId onlineSize:(NSInteger)onlineSize totalSize:(NSInteger)totalSize;
 ```
 其他用户更改房间名称时
 ```Objective-C
+/**
+*  其他用户更改房间名称时
+*
+*  @param openId  用户openId
+*  @param roomName  房间名
+*/
 - (void)onMemberChangerRoomNameOpenId:(NSString*)openId roomName:(NSString*)roomName;
 ```
 其他用户打开位置共享
 ```Objective-C
+/**
+*  其他用户打开位置共享
+*
+*  @param openId  用户openId
+*/
 - (void)onMemberOpenLocationSharingChange:(NSString*)openId;
 ```
 其他用户关闭位置共享
 ```Objective-C
+/**
+*  其他用户关闭位置共享
+*
+*  @param openId  用户openId
+*/
 - (void)onMemberCloseLocationSharingChange:(NSString*)openId;
 ```
 
 <h2 id="类说明">四、类说明</h2>
 
 <h3>实体类</h3>
+
 1.房间信息 EDRoomInfo
 ```Objective-C
 /**
@@ -395,6 +488,7 @@
 ```
 
 <h3>枚举</h3>
+
 1.发言状态
 ```Objective-C
 typedef enum{
