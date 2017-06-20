@@ -65,7 +65,7 @@
     [[EDTalkieManager shareInstance] setGlobalMute:YES callback:^(NSError *error) {
         strongify_self
         if (error) {
-            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",error.description]];
+            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",[error localizedDescription]]];
         }else{
             NSLog(@"当前线程%@",[NSThread currentThread]);
             dispatch_sync(dispatch_get_main_queue(), ^{
@@ -79,7 +79,7 @@
 - (IBAction)ungMute:(id)sender {
     [[EDTalkieManager shareInstance] setGlobalMute:NO callback:^(NSError *error) {
         if (error) {
-            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",error.description]];
+            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",[error localizedDescription]]];
         }else{
             NSLog(@"当前线程%@",[NSThread currentThread]);
             dispatch_sync(dispatch_get_main_queue(), ^{
@@ -97,7 +97,7 @@
         strongify_self
         if (error) {
             [SVProgressHUD showErrorWithStatus:error.description];
-            NSLog(@"建群失败:%@",error.description);
+            NSLog(@"建群失败:%@",[error localizedDescription]);
         }else{
             NSLog(@"成功创建群%@",roomInfo);
             [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"成功创建群%@",roomInfo.nid]];
@@ -139,7 +139,7 @@
 - (IBAction)isValidToken:(id)sender {
     [[EDTalkieManager shareInstance] oauthWithToken:[GlobalEntity sharedInstance].token openId:[GlobalEntity sharedInstance].openId callback:^(NSError *error) {
         if (error) {
-            [SVProgressHUD showErrorWithStatus:error.description];
+            [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
             NSLog(@"校验失败:%@",error.description);
         }else{
             [SVProgressHUD showSuccessWithStatus:@"校验成功"];

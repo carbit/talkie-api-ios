@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../EasyconnTalkieSDK/EasyconnTalkie/EDTalkieManager.m"
-            timestampString = "519299911.191373"
+            timestampString = "519634798.473937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "613"
-            endingLineNumber = "613"
+            startingLineNumber = "611"
+            endingLineNumber = "611"
             landmarkName = "-startListen"
             landmarkType = "7">
          </BreakpointContent>

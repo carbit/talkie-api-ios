@@ -8,6 +8,7 @@
 
 #import "ChannelOperateViewController.h"
 #import "MemberViewController.h"
+#import "Reachability.h"
 
 @interface ChannelOperateViewController ()<UITableViewDelegate,UITableViewDataSource,EDTalkieManagerSelfDelegate,EDTalkieManagerMemberDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *roomNameTextFiled;
@@ -55,6 +56,12 @@
 }
 
 - (IBAction)speak:(id)sender {
+    Reachability *reach = [Reachability reachabilityForInternetConnection];
+    NetworkStatus status = [reach currentReachabilityStatus];
+    if (status == NotReachable) {
+        [SVProgressHUD showInfoWithStatus:@"请检查网络"];
+        return;
+    }
     [[EDTalkieManager shareInstance] requestSpeakWithResult:^(NSError *error) {
         if (error) {
             [SVProgressHUD showErrorWithStatus:error.description];
@@ -77,6 +84,12 @@
 }
 
 - (IBAction)uploadLocation:(id)sender {
+    Reachability *reach = [Reachability reachabilityForInternetConnection];
+    NetworkStatus status = [reach currentReachabilityStatus];
+    if (status == NotReachable) {
+        [SVProgressHUD showInfoWithStatus:@"请检查网络"];
+        return;
+    }
     [[EDTalkieManager shareInstance] uploadLocationWithLat:30.5 lon:114.39 speed:2 direction:0];
 }
 - (IBAction)leaveRoom:(id)sender {
@@ -137,6 +150,8 @@
     [[EDTalkieManager shareInstance] setRoomName:self.roomNameTextFiled.text roomId:self.roomId callback:^(NSError *error) {
         if (!error) {
             [SVProgressHUD showSuccessWithStatus:@"群名称修改成功"];
+        }else{
+            [SVProgressHUD showInfoWithStatus:error.description];
         }
     }];
 }

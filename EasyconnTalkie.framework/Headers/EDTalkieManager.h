@@ -76,9 +76,6 @@
 - (void)onMemberCloseLocationSharingChange:(NSString*)openId;
 @end
 
-
-
-
 @interface EDTalkieManager : NSObject
 
 @property (nonatomic, weak) id<EDTalkieManagerSelfDelegate> selfDelegate;
@@ -267,47 +264,5 @@
  *  获得发言状态
  */
 - (MicrophoneState)getSpeakState;
-
-///**
-// *  设置自己的通知事件
-// */
-////state 0 手动、3 服务器打断、4 自动丢麦、5 来电丢麦、6 网络原因打断
-//- (void)listeningStopNtf:(void(^)(int state))callback;
-//
-//- (void)listeningOnRoleChange:(void(^)(int role))callback;
-//
-//- (void)listeningOnKick;
-//
-//- (void)listeningOnSilence;
-//
-///**
-// *   其它用户变更事件
-// */
-////监听其他用户开始发言
-//- (void)listeningOtherUserStartSpeak:(void(^)(NSString *openID))callback;
-//
-////监听其他用户停止发言
-//- (void)listeningOtherUserStopSpeak:(void(^)(NSString *openID))callback;
-//
-////监听其他用户权限改变
-//- (void)listeningOtherUserRoleChange:(void(^)(NSString *openId,int layer))callback;
-//
-////监听其他用户位置更新
-//- (void)listeningOtherUserLocationChanged:(void(^)(NSString *openID,CGFloat lat,CGFloat lon,CGFloat speed,CGFloat direction))callback;
-//
-//- (void)listeningOtherUserOpenLocationSharing:(void(^)(NSString *openID))callback;
-//
-//- (void)listeningOtherUserCloseLocationShareing:(void(^)(NSString *openID))callback;
-
-
-//
-//#pragma mark Local
-///**
-// *  监听连接状态
-// *  @param callback 监听回调
-// */
-//- (void)listeningConnectState:(void(^)(ConnectState state))callback;
-
-
 
 @end

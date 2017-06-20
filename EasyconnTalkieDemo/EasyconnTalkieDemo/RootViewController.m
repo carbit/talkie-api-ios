@@ -83,7 +83,7 @@
             }
             else {
                 NSLog(@"%@",error);
-                [SVProgressHUD showErrorWithStatus:error.description];
+                [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
             }
         }];
     }else{
@@ -109,7 +109,7 @@
         }
         else {
             NSLog(@"%@",error);
-            [SVProgressHUD showErrorWithStatus:error.description];
+            [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
         }
     }];
 }

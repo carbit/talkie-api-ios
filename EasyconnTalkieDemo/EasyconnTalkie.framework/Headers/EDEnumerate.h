@@ -10,19 +10,6 @@
 
 @interface EDEnumerate : NSObject
 
-//对讲连接状态
-typedef enum{
-    ConnectStateConnected = 0,      //连接成功
-    ConnectStateDisconnect = 1,     //连接断开
-} ConnectState;
-
-//获取结构的类型
-typedef enum {
-    RoomInfoStructType_base = 0,
-    RoomInfoStructType_simple,
-    RoomInfoStructType_complete
-}RoomInfoStructType;
-
 //发言状态
 typedef enum{
     MicrophoneState_ERROR = 0,//错误(检查是否配置了ImService)
@@ -50,18 +37,18 @@ typedef enum {
 }StopSpeakType;
 
 typedef NS_ENUM(NSInteger, EDIntercomRoomPrivilege) {
-    // 1 开头权限用于普通用户在房间内的操作权限定义
+    // 1 普通用户在房间内的操作权限定义
     AllowSpeakPrivilege                 =   1001,   // 允许发言
     AllowChangeRoomNamePrivilege        =   1002,   // 允许修改房间名称
     AllowChangeDestinationPrivilege     =   1003,   // 允许修改房间目的地
     AllowInviteUserPrivilege            =   1004,   // 允许邀请好友
     
-    // 2 开头权限用于管理员对单个用户的管理操作定义
+    // 2 管理员对单个用户的管理操作定义
     AllowKickUserPrivilege              =   2001,   // 允许将用户踢出房间
     AllowMuteUserPrivilege              =   2002,   // 允许将用户禁言
     AllowUnmuteUserPrivilege            =   2003,   // 允许恢复用户发言
     
-    // 3 开头权限用于管理员对整个房间的管理操作定义
+    // 3 管理员对整个房间的管理操作定义
     AllowChangePeopleNumberPrivilege    =   3001,   // 允许修改房间人数上限
     AllowChangeSpeakTimePrivilege       =   3002,   // 允许修改房间发言时长
     AllowDisableSpeakPrivilege          =   3003,   // 允许禁止房间内所有普通用户发言
