@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/EDTalkieManager.h</key>
 		<data>
-		3itt5Ux0EFLPZuIYvxmefpsTLrk=
+		r+CN76BSps/+K7MnfC55xm6u+Rg=
 		</data>
 		<key>Headers/EDUserInfo.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm.swiftmodule</key>
 		<data>
-		phQd1aptQl/Rcm1wnbzLvz//JVQ=
+		MX2F2b482+DhiUpV4IfAngCRDY8=
 		</data>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		dvMfi8E4w9DJ45O1rGaIuzXBWi4=
+		zLJ5HCDVihVvBzWfIYZjRU+CPso=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,11 +81,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3itt5Ux0EFLPZuIYvxmefpsTLrk=
+			r+CN76BSps/+K7MnfC55xm6u+Rg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Go0rVKwL2LVaAbITCZe0/FNvw1ABT7dEseNfgXA2Fbg=
+			lsvc8BmLaJ7FJaA21iudP/gJl7rjPFaidnfPtRRheLk=
 			</data>
 		</dict>
 		<key>Headers/EDUserInfo.h</key>
@@ -136,11 +136,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			phQd1aptQl/Rcm1wnbzLvz//JVQ=
+			MX2F2b482+DhiUpV4IfAngCRDY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			duIthl0sQnB3WWGwAc8HcaBkw+jrsvBPzGrqjzMRC8A=
+			PYyxauAn7C05eDrk8kfVyD4zn5Oq7xUAG+BAj4O+P0E=
 			</data>
 		</dict>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm64.swiftdoc</key>
@@ -158,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dvMfi8E4w9DJ45O1rGaIuzXBWi4=
+			zLJ5HCDVihVvBzWfIYZjRU+CPso=
 			</data>
 			<key>hash2</key>
 			<data>
-			OPBUz6EbFhnJEYlAg2/ZlZlu7mmnf8kCSEn6LJhUK4Y=
+			71ui7p6YgGUqvHN31V+4XWnNCYGmoidwUPfqvo1wgfo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

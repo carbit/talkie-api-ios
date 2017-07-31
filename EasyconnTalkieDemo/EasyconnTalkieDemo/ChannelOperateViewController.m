@@ -9,8 +9,9 @@
 #import "ChannelOperateViewController.h"
 #import "MemberViewController.h"
 #import "Reachability.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface ChannelOperateViewController ()<UITableViewDelegate,UITableViewDataSource,EDTalkieManagerSelfDelegate,EDTalkieManagerMemberDelegate>
+@interface ChannelOperateViewController ()<UITableViewDelegate,UITableViewDataSource,EDTalkieManagerSelfDelegate,EDTalkieManagerMemberDelegate,AVAudioPlayerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *roomNameTextFiled;
 @property (weak, nonatomic) IBOutlet UILabel *totalNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *onlineNumberLabel;
@@ -21,6 +22,7 @@
 @property (nonatomic,strong) NSTimer *statusTimer;
 @property (weak, nonatomic) IBOutlet UILabel *volumeLabel;
 @property (nonatomic,strong) NSMutableArray<EDUserInfo> *listArray;
+@property (nonatomic,strong) AVAudioPlayer *player;
 @end
 
 @implementation ChannelOperateViewController
@@ -65,6 +67,17 @@
     [[EDTalkieManager shareInstance] requestSpeakWithResult:^(NSError *error) {
         if (error) {
             [SVProgressHUD showErrorWithStatus:error.description];
+            NSError *err;
+            self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"抢麦失败" withExtension:@"wav"] error:&err];
+            self.player.volume = 1.0;
+            self.player.rate = 1.0;
+            [self.player play];
+        }else{
+            NSError *err;
+            self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"开始识别" withExtension:@"wav"] error:&err];
+            self.player.volume = 1.0;
+            self.player.rate = 1.0;
+            [self.player play];
         }
     }];
 }
@@ -236,6 +249,11 @@
 }
 
 - (void)onSelfStopSpeak:(StopSpeakType)stopSpeakType{
+    NSError *err;
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"识别完成" withExtension:@"wav"] error:&err];
+    self.player.volume = 1.0;
+    self.player.rate = 1.0;
+    [self.player play];
     switch (stopSpeakType) {
         case StopSpeakType_BY_HAND:
         {
@@ -381,6 +399,15 @@
 - (void)onMemberCloseLocationSharingChange:(NSString*)openId{
     [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"用户%@关闭位置共享",openId]];
 }
+
+//- (AVAudioPlayer *)player{
+//    if (!_player) {
+//        _player = [[AVAudioPlayer alloc] init];
+////        _player.delegate = self;
+//        _player.rate = 1.0;
+//    }
+//    return _player;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

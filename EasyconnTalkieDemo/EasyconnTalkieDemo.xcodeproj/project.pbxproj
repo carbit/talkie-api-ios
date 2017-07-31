@@ -15,12 +15,15 @@
 		793C5A741E30B3C800692CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793C5A721E30B3C800692CA4 /* LaunchScreen.storyboard */; };
 		793C5A7F1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A7E1E30B3C800692CA4 /* EasyconnTalkieDemoTests.m */; };
 		793C5A8A1E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793C5A891E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m */; };
-		E25E85E61F0E464100638CD3 /* EasyconnTalkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E85E51F0E464100638CD3 /* EasyconnTalkie.framework */; };
 		E25E85E71F0E465500638CD3 /* EasyconnTalkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E85E51F0E464100638CD3 /* EasyconnTalkie.framework */; };
-		E25E85E81F0E465500638CD3 /* EasyconnTalkie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E25E85E51F0E464100638CD3 /* EasyconnTalkie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E27AC1391F2ED10B00806A1D /* EasyconnTalkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27AC1381F2ED10B00806A1D /* EasyconnTalkie.framework */; };
 		E29F47041EE79FA1001C624F /* GlobalEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E29F47031EE79FA1001C624F /* GlobalEntity.m */; };
 		E29F47071EE7A6C0001C624F /* ChannelOperateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29F47061EE7A6C0001C624F /* ChannelOperateViewController.m */; };
 		E29F476A1EE94F11001C624F /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29F47691EE94F11001C624F /* MemberViewController.m */; };
+		E2A7920A1F2896FB00247E9B /* 开始识别.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A792091F2896FB00247E9B /* 开始识别.wav */; };
+		E2A7920C1F289B7A00247E9B /* 抢麦失败.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A7920B1F289B7A00247E9B /* 抢麦失败.wav */; };
+		E2A7920E1F289BE900247E9B /* 识别完成.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A7920D1F289BE900247E9B /* 识别完成.wav */; };
+		E2A792111F28AB1F00247E9B /* PcmPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A792101F28AB1F00247E9B /* PcmPlayer.m */; };
 		E2AAF2C21EE6C8820095173C /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AAF2B91EE6C8820095173C /* SVIndefiniteAnimatedView.m */; };
 		E2AAF2C31EE6C8820095173C /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AAF2BB1EE6C8820095173C /* SVProgressAnimatedView.m */; };
 		E2AAF2C41EE6C8820095173C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2AAF2BD1EE6C8820095173C /* SVProgressHUD.bundle */; };
@@ -54,7 +57,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E25E85E81F0E465500638CD3 /* EasyconnTalkie.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +80,8 @@
 		793C5A851E30B3C800692CA4 /* EasyconnTalkieDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyconnTalkieDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		793C5A891E30B3C800692CA4 /* EasyconnTalkieDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyconnTalkieDemoUITests.m; sourceTree = "<group>"; };
 		793C5A8B1E30B3C800692CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E25E85E51F0E464100638CD3 /* EasyconnTalkie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyconnTalkie.framework; sourceTree = "<group>"; };
+		E25E85E51F0E464100638CD3 /* EasyconnTalkie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyconnTalkie.framework; path = "/Users/ch/Desktop/凯立德7.3.1/EasyconnTalkieDemo/EasyconnTalkie.framework"; sourceTree = "<absolute>"; };
+		E27AC1381F2ED10B00806A1D /* EasyconnTalkie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyconnTalkie.framework; sourceTree = "<group>"; };
 		E29F47001EE799BC001C624F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E29F47021EE79FA1001C624F /* GlobalEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalEntity.h; sourceTree = "<group>"; };
 		E29F47031EE79FA1001C624F /* GlobalEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalEntity.m; sourceTree = "<group>"; };
@@ -86,6 +89,11 @@
 		E29F47061EE7A6C0001C624F /* ChannelOperateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelOperateViewController.m; sourceTree = "<group>"; };
 		E29F47681EE94F11001C624F /* MemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberViewController.h; sourceTree = "<group>"; };
 		E29F47691EE94F11001C624F /* MemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberViewController.m; sourceTree = "<group>"; };
+		E2A792091F2896FB00247E9B /* 开始识别.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "开始识别.wav"; sourceTree = "<group>"; };
+		E2A7920B1F289B7A00247E9B /* 抢麦失败.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "抢麦失败.wav"; sourceTree = "<group>"; };
+		E2A7920D1F289BE900247E9B /* 识别完成.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "识别完成.wav"; sourceTree = "<group>"; };
+		E2A7920F1F28AB1F00247E9B /* PcmPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcmPlayer.h; sourceTree = "<group>"; };
+		E2A792101F28AB1F00247E9B /* PcmPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcmPlayer.m; sourceTree = "<group>"; };
 		E2AAF2B81EE6C8820095173C /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		E2AAF2B91EE6C8820095173C /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		E2AAF2BA1EE6C8820095173C /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -107,8 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27AC1391F2ED10B00806A1D /* EasyconnTalkie.framework in Frameworks */,
 				E25E85E71F0E465500638CD3 /* EasyconnTalkie.framework in Frameworks */,
-				E25E85E61F0E464100638CD3 /* EasyconnTalkie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +176,8 @@
 				E29F47061EE7A6C0001C624F /* ChannelOperateViewController.m */,
 				E29F47681EE94F11001C624F /* MemberViewController.h */,
 				E29F47691EE94F11001C624F /* MemberViewController.m */,
+				E2A7920F1F28AB1F00247E9B /* PcmPlayer.h */,
+				E2A792101F28AB1F00247E9B /* PcmPlayer.m */,
 				793C5A701E30B3C800692CA4 /* Assets.xcassets */,
 				793C5A721E30B3C800692CA4 /* LaunchScreen.storyboard */,
 				793C5A751E30B3C800692CA4 /* Info.plist */,
@@ -179,6 +189,9 @@
 		793C5A5E1E30B3C800692CA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E2A7920B1F289B7A00247E9B /* 抢麦失败.wav */,
+				E2A792091F2896FB00247E9B /* 开始识别.wav */,
+				E2A7920D1F289BE900247E9B /* 识别完成.wav */,
 				793C5A5F1E30B3C800692CA4 /* main.m */,
 				E29F47001EE799BC001C624F /* PrefixHeader.pch */,
 			);
@@ -206,7 +219,7 @@
 		793C5A9D1E30C3E300692CA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E25E85E51F0E464100638CD3 /* EasyconnTalkie.framework */,
+				E27AC1381F2ED10B00806A1D /* EasyconnTalkie.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,10 +358,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A7920A1F2896FB00247E9B /* 开始识别.wav in Resources */,
 				793C5A741E30B3C800692CA4 /* LaunchScreen.storyboard in Resources */,
+				E2A7920C1F289B7A00247E9B /* 抢麦失败.wav in Resources */,
 				793C5A711E30B3C800692CA4 /* Assets.xcassets in Resources */,
 				793C5A6F1E30B3C800692CA4 /* Main.storyboard in Resources */,
 				E2AAF2C41EE6C8820095173C /* SVProgressHUD.bundle in Resources */,
+				E2A7920E1F289BE900247E9B /* 识别完成.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +391,7 @@
 			files = (
 				E2AAF2C61EE6C8820095173C /* SVRadialGradientLayer.m in Sources */,
 				793C5A631E30B3C800692CA4 /* AppDelegate.m in Sources */,
+				E2A792111F28AB1F00247E9B /* PcmPlayer.m in Sources */,
 				E2AAF2C31EE6C8820095173C /* SVProgressAnimatedView.m in Sources */,
 				E29F47071EE7A6C0001C624F /* ChannelOperateViewController.m in Sources */,
 				E2AAF2CB1EE6D0240095173C /* MainChannelViewController.m in Sources */,

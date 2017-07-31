@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface GlobalEntity : NSObject
+
+typedef void (^EDCompleteBlock) (id pra1, id pra2, id pra3);
 + (GlobalEntity*)sharedInstance;
 
 @property (nonatomic,strong) NSString *token;

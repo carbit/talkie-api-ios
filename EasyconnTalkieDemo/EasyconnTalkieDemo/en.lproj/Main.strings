@@ -1,0 +1,147 @@
+
+/* Class = "UIButton"; normalTitle = "停止轮询"; ObjectID = "0K8-rk-VlO"; */
+"0K8-rk-VlO.normalTitle" = "停止轮询";
+
+/* Class = "UIButton"; normalTitle = "下线"; ObjectID = "0P8-rI-Nxf"; */
+"0P8-rI-Nxf.normalTitle" = "下线";
+
+/* Class = "UIButton"; normalTitle = "授权登录"; ObjectID = "1vo-Ty-jBi"; */
+"1vo-Ty-jBi.normalTitle" = "授权登录";
+
+/* Class = "UIButton"; normalTitle = "上报位置"; ObjectID = "2hP-zD-qt3"; */
+"2hP-zD-qt3.normalTitle" = "上报位置";
+
+/* Class = "UIButton"; normalTitle = "退出房间"; ObjectID = "3jb-uM-sVP"; */
+"3jb-uM-sVP.normalTitle" = "退出房间";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4aD-Lf-53k"; */
+"4aD-Lf-53k.text" = "Label";
+
+/* Class = "UILabel"; text = "openId:"; ObjectID = "550-lJ-MGt"; */
+"550-lJ-MGt.text" = "openId:";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "5a8-WA-w5V"; */
+"5a8-WA-w5V.text" = "name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7U2-Bu-Dwv"; */
+"7U2-Bu-Dwv.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "踢出群"; ObjectID = "7yl-NO-oTm"; */
+"7yl-NO-oTm.normalTitle" = "踢出群";
+
+/* Class = "UILabel"; text = "channelid"; ObjectID = "8e9-LP-bn9"; */
+"8e9-LP-bn9.text" = "channelid";
+
+/* Class = "UIButton"; normalTitle = "设为管理员"; ObjectID = "9A1-iE-NRK"; */
+"9A1-iE-NRK.normalTitle" = "设为管理员";
+
+/* Class = "UIButton"; normalTitle = "打开共享"; ObjectID = "9Cl-rF-rWV"; */
+"9Cl-rF-rWV.normalTitle" = "打开共享";
+
+/* Class = "UILabel"; text = "roomName:"; ObjectID = "9vl-vf-JN7"; */
+"9vl-vf-JN7.text" = "roomName:";
+
+/* Class = "UIButton"; normalTitle = "禁言2小时"; ObjectID = "Aba-WG-Qbo"; */
+"Aba-WG-Qbo.normalTitle" = "禁言2小时";
+
+/* Class = "UIButton"; normalTitle = "销毁服务"; ObjectID = "Ccg-zb-WZg"; */
+"Ccg-zb-WZg.normalTitle" = "销毁服务";
+
+/* Class = "UIButton"; normalTitle = "开始轮询"; ObjectID = "Djf-om-NFu"; */
+"Djf-om-NFu.normalTitle" = "开始轮询";
+
+/* Class = "UILabel"; text = "openId:"; ObjectID = "ETd-rE-1ZC"; */
+"ETd-rE-1ZC.text" = "openId:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Fbn-aZ-zjL"; */
+"Fbn-aZ-zjL.text" = "Label";
+
+/* Class = "UILabel"; text = "抢麦状态"; ObjectID = "Fhr-ku-BaQ"; */
+"Fhr-ku-BaQ.text" = "抢麦状态";
+
+/* Class = "UILabel"; text = "secret"; ObjectID = "FoT-0V-jLj"; */
+"FoT-0V-jLj.text" = "secret";
+
+/* Class = "UIButton"; normalTitle = "设置音量"; ObjectID = "JAc-r9-PIW"; */
+"JAc-r9-PIW.normalTitle" = "设置音量";
+
+/* Class = "UILabel"; text = "token:"; ObjectID = "M65-44-wPH"; */
+"M65-44-wPH.text" = "token:";
+
+/* Class = "UIButton"; normalTitle = "静音关"; ObjectID = "Ni5-yg-87A"; */
+"Ni5-yg-87A.normalTitle" = "静音关";
+
+/* Class = "UILabel"; text = "token:"; ObjectID = "OUN-ri-Kxr"; */
+"OUN-ri-Kxr.text" = "token:";
+
+/* Class = "UILabel"; text = "总人数"; ObjectID = "XX0-v0-T06"; */
+"XX0-v0-T06.text" = "总人数";
+
+/* Class = "UIButton"; normalTitle = "丢麦"; ObjectID = "YDc-jK-3xy"; */
+"YDc-jK-3xy.normalTitle" = "丢麦";
+
+/* Class = "UILabel"; text = "在线人数"; ObjectID = "YIT-zS-69j"; */
+"YIT-zS-69j.text" = "在线人数";
+
+/* Class = "UIButton"; normalTitle = "修改"; ObjectID = "acD-cC-YTK"; */
+"acD-cC-YTK.normalTitle" = "修改";
+
+/* Class = "UIButton"; normalTitle = "初始化"; ObjectID = "bCb-Oe-urb"; */
+"bCb-Oe-urb.normalTitle" = "初始化";
+
+/* Class = "UIButton"; normalTitle = "上线"; ObjectID = "bkp-Bp-BqP"; */
+"bkp-Bp-BqP.normalTitle" = "上线";
+
+/* Class = "UIButton"; normalTitle = "创建频道"; ObjectID = "cC9-Ro-PeZ"; */
+"cC9-Ro-PeZ.normalTitle" = "创建频道";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dYX-Qd-HiC"; */
+"dYX-Qd-HiC.text" = "Label";
+
+/* Class = "UILabel"; text = "UserId"; ObjectID = "dh0-98-cmF"; */
+"dh0-98-cmF.text" = "UserId";
+
+/* Class = "UIButton"; normalTitle = "抢麦"; ObjectID = "duW-Oi-OhA"; */
+"duW-Oi-OhA.normalTitle" = "抢麦";
+
+/* Class = "UIButton"; normalTitle = "群成员"; ObjectID = "g3h-Ng-vqi"; */
+"g3h-Ng-vqi.normalTitle" = "群成员";
+
+/* Class = "UIButton"; normalTitle = "登录服务器"; ObjectID = "gVK-yh-12c"; */
+"gVK-yh-12c.normalTitle" = "登录服务器";
+
+/* Class = "UILabel"; text = "label"; ObjectID = "gYw-iN-umW"; */
+"gYw-iN-umW.text" = "label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hUH-zY-4vK"; */
+"hUH-zY-4vK.text" = "Label";
+
+/* Class = "UITextField"; text = "B78E9DC78F238A7"; ObjectID = "hfQ-0d-rhh"; */
+"hfQ-0d-rhh.text" = "B78E9DC78F238A7";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kwf-vG-knR"; */
+"kwf-vG-knR.text" = "Label";
+
+/* Class = "UILabel"; text = "音量"; ObjectID = "nZ9-Wx-DM0"; */
+"nZ9-Wx-DM0.text" = "音量";
+
+/* Class = "UIButton"; normalTitle = "加入频道"; ObjectID = "ony-ay-ZRe"; */
+"ony-ay-ZRe.normalTitle" = "加入频道";
+
+/* Class = "UIButton"; normalTitle = "关闭共享"; ObjectID = "pTj-9K-zJB"; */
+"pTj-9K-zJB.normalTitle" = "关闭共享";
+
+/* Class = "UIButton"; normalTitle = "设为普通用户"; ObjectID = "pcf-7p-uMJ"; */
+"pcf-7p-uMJ.normalTitle" = "设为普通用户";
+
+/* Class = "UITextField"; text = "DEMO"; ObjectID = "rsf-aC-q8a"; */
+"rsf-aC-q8a.text" = "DEMO";
+
+/* Class = "UILabel"; text = "AppId"; ObjectID = "ufF-5o-VkY"; */
+"ufF-5o-VkY.text" = "AppId";
+
+/* Class = "UIButton"; normalTitle = "静音开"; ObjectID = "wJB-NY-slP"; */
+"wJB-NY-slP.normalTitle" = "静音开";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wc3-V4-ql5"; */
+"wc3-V4-ql5.text" = "Label";

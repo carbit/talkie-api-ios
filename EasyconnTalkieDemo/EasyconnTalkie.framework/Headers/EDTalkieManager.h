@@ -78,8 +78,8 @@
 
 @interface EDTalkieManager : NSObject
 
-@property (nonatomic, weak) id<EDTalkieManagerSelfDelegate> selfDelegate;
-@property (nonatomic, weak) id<EDTalkieManagerMemberDelegate> memberDelegate;
+@property (nonatomic, weak) id<EDTalkieManagerSelfDelegate> selfDelegate;//针对自己的操作
+@property (nonatomic, weak) id<EDTalkieManagerMemberDelegate> memberDelegate;//针对其他用户的操作
 
 /**
  *  初始化
@@ -119,6 +119,11 @@
  */
 - (void)oauthWithToken:(NSString*)token openId:(NSString*)openId callback:(void(^)(NSError *error))callback;
 
+/**
+ *  APP登出
+ */
+- (void)oauthLogoutCallback:(void(^)(NSError *error))callback;
+
 #pragma mark 房间操作
 
 /**
@@ -143,6 +148,13 @@
  *  @param callback  退出房间回调,error:错误信息，为nil时表示成功
  */
 - (void)leaveRoom:(NSString*)roomId callback:(void(^)(NSError *error))callback;
+
+/**
+ *  房间列表
+ *
+ *  @param callback  房间列表,error:错误信息，为nil时表示成功
+ */
+- (void)getRoomList:(void(^)(NSError *error,NSArray <EDRoomInfo>*roomInfoList))callback;
 
 /**
  *  设置频道列表轮询事件

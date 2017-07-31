@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *userTokenLabel;
 @property (weak, nonatomic) IBOutlet UIButton *oauthLoginLabel;
 @property (weak, nonatomic) IBOutlet UIView *baseView;
+@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
 @property (nonatomic,assign) BOOL isSDKRuning;
 
 @property(nonatomic,strong)UITextView *msgTv;
@@ -114,6 +115,20 @@
     }];
 }
 
+- (IBAction)logout:(id)sender {
+    [[EDTalkieManager shareInstance] oauthLogoutCallback:^(NSError *error) {
+        if (!error) {
+            [GlobalEntity sharedInstance].token = nil;
+            [GlobalEntity sharedInstance].openId = nil;
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"token"];
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"openID"];
+        }else{
+            NSLog(@"%@",error);
+            [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
+        }
+    }];
+}
+
 - (BOOL)checkIsLogin{
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"token"]){
         return YES;
@@ -135,6 +150,7 @@
         self.userTokenLabel.hidden = NO;
         self.userOpenIdLabel.hidden = NO;
         self.oauthLoginLabel.hidden = NO;
+        self.logoutButton.hidden = NO;
         self.userTokenLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"token"];
         self.userOpenIdLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"openID"];
     }else{
@@ -143,6 +159,7 @@
         self.openIdLabel.hidden = YES;
         self.userTokenLabel.hidden = YES;
         self.userOpenIdLabel.hidden = YES;
+        self.logoutButton.hidden = YES;
     }
 }
 

@@ -254,6 +254,25 @@
 */
 - (MicrophoneState)getSpeakState;
 ```
+26、 退出登录
+```Objective-C
+/**
+* APP登出
+*
+* @param callback APP登出
+*/
+- (void)oauthLogoutCallback:(void(^)(NSError *error))callback;
+```
+27、 房间列表
+```Objective-C
+/**
+*  房间列表
+*
+*  @param callback  房间列表,error:错误信息，为nil时表示成功
+*/
+- (void)getRoomList:(void(^)(NSError *error,NSArray <EDRoomInfo>*roomInfoList))callback;
+```
+
 <h2 id="SDK接口代理说明">三、SDK接口代理说明</h2>
 
 在要调用的类引进EDTalkieManagerSelfDelegate,EDTalkieManagerMemberDelegate

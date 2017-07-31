@@ -8,6 +8,8 @@
 
 #import "MainChannelViewController.h"
 #import "ChannelOperateViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "PcmPlayer.h"
 
 @interface MainChannelViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *muteLabel;
@@ -17,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *tokenLabel;
 @property (weak, nonatomic) IBOutlet UITableView *roomListTableView;
 @property (nonatomic,strong) NSMutableArray<EDRoomInfo> *listArray;
+@property (nonatomic,strong) PcmPlayer *player;
+@property (nonatomic,strong) AVAudioPlayer *avPlayer;
 @end
 
 @implementation MainChannelViewController
@@ -61,33 +65,47 @@
 }
 
 - (IBAction)gMute:(id)sender {
-    weakify_self
-    [[EDTalkieManager shareInstance] setGlobalMute:YES callback:^(NSError *error) {
-        strongify_self
-        if (error) {
-            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",[error localizedDescription]]];
-        }else{
-            NSLog(@"当前线程%@",[NSThread currentThread]);
-            dispatch_sync(dispatch_get_main_queue(), ^{
-                [SVProgressHUD showSuccessWithStatus:@"设置静音成功"];
-                self.muteLabel.text = @"静音中";
-            });
-        }
-    }];
+    self.player = [[PcmPlayer alloc] init];
+    [self.player stop];
+    [self.player setAudioData:[[NSBundle mainBundle] pathForResource:@"开始识别" ofType:@"wav"]];
+    [self.player playWithFinish:nil];
+    
+    
+//    weakify_self
+//    [[EDTalkieManager shareInstance] setGlobalMute:YES callback:^(NSError *error) {
+//        strongify_self
+//        if (error) {
+//            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",[error localizedDescription]]];
+//        }else{
+//            NSLog(@"当前线程%@",[NSThread currentThread]);
+//            dispatch_sync(dispatch_get_main_queue(), ^{
+//                [SVProgressHUD showSuccessWithStatus:@"设置静音成功"];
+//                self.muteLabel.text = @"静音中";
+//            });
+//        }
+//    }];
 }
 
 - (IBAction)ungMute:(id)sender {
-    [[EDTalkieManager shareInstance] setGlobalMute:NO callback:^(NSError *error) {
-        if (error) {
-            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",[error localizedDescription]]];
-        }else{
-            NSLog(@"当前线程%@",[NSThread currentThread]);
-            dispatch_sync(dispatch_get_main_queue(), ^{
-                [SVProgressHUD showSuccessWithStatus:@"关闭静音成功"];
-                self.muteLabel.text = @"静音关闭";
-            });
-        }
-    }];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"开始识别" ofType:@"wav"]];
+    NSError *err;
+    self.avPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+    self.avPlayer.numberOfLoops = 0;
+    self.avPlayer.volume = 1.0;
+    [self.avPlayer prepareToPlay];
+    [self.avPlayer play];
+    
+//    [[EDTalkieManager shareInstance] setGlobalMute:NO callback:^(NSError *error) {
+//        if (error) {
+//            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",[error localizedDescription]]];
+//        }else{
+//            NSLog(@"当前线程%@",[NSThread currentThread]);
+//            dispatch_sync(dispatch_get_main_queue(), ^{
+//                [SVProgressHUD showSuccessWithStatus:@"关闭静音成功"];
+//                self.muteLabel.text = @"静音关闭";
+//            });
+//        }
+//    }];
 }
 
 - (IBAction)createChannel:(id)sender {
