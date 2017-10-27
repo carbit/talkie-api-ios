@@ -250,6 +250,11 @@
 
 - (void)onSelfStopSpeak:(StopSpeakType)stopSpeakType{
     NSError *err;
+    
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [session setActive:YES error:nil];
+    
     self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"识别完成" withExtension:@"wav"] error:&err];
     self.player.volume = 1.0;
     self.player.rate = 1.0;
