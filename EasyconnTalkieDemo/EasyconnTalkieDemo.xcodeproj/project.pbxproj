@@ -582,8 +582,8 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carbit.inhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8d39bc27-ee5c-4006-9c7a-d50fa6591c19";
-				PROVISIONING_PROFILE_SPECIFIER = inhousecommon;
+				PROVISIONING_PROFILE = "912f82dc-a17a-44b3-a22f-19b668dc5fb6";
+				PROVISIONING_PROFILE_SPECIFIER = inhouse_dev;
 			};
 			name = Debug;
 		};

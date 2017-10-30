@@ -4,6 +4,46 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>EasyconnTalkie</key>
+		<data>
+		XIkxmnyk7Xax1BAbK72ovSU0WGQ=
+		</data>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		VEdE+mPDMMk0xCe8ZOLbfNBMq7M=
+		</data>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<data>
+		MdpVqfqD3BSOy1OPnqRqZD55Pr4=
+		</data>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		v3GplgqCv8aNi1FghBYefW/KnOs=
+		</data>
+		<key>Frameworks/libswiftCoreImage.dylib</key>
+		<data>
+		WHh5z0MoafoLRCVs9Vlb8fF2G/k=
+		</data>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		5Dm79nlLTlsZ7skYUHOQ4SYCmaM=
+		</data>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		GVjneXANwNLiCfPhZw6G9dCz5Tc=
+		</data>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		i06PCFTIqBR/aBz2Vqi6s5Fifwk=
+		</data>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		2KH3KemTbqI5VeX0VYhwazq8K1Y=
+		</data>
+		<key>Frameworks/libswiftUIKit.dylib</key>
+		<data>
+		id2BKpZXCydSkbKPFmAZOaXImrE=
+		</data>
 		<key>Headers/EDEnumerate.h</key>
 		<data>
 		HM835itDUzFd4ZXnxyQjggOISQQ=
@@ -14,7 +54,7 @@
 		</data>
 		<key>Headers/EDTalkieManager.h</key>
 		<data>
-		r+CN76BSps/+K7MnfC55xm6u+Rg=
+		CQIntgdxs1Iy+FtYqzfijKJ7Jzw=
 		</data>
 		<key>Headers/EDUserInfo.h</key>
 		<data>
@@ -28,17 +68,13 @@
 		<data>
 		nmwJK0bci5nNW1lUfz8A55oV/JE=
 		</data>
-		<key>Info.plist</key>
-		<data>
-		cXwMqVxjYfHlfThbbQBoLMODNdI=
-		</data>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm.swiftdoc</key>
 		<data>
 		bBUBO2i2UlTriUrBw9eEYrLzB54=
 		</data>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm.swiftmodule</key>
 		<data>
-		MX2F2b482+DhiUpV4IfAngCRDY8=
+		BhvAF7jAzOtNH0pluxgqCQMQNyE=
 		</data>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +82,7 @@
 		</data>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		zLJ5HCDVihVvBzWfIYZjRU+CPso=
+		i09bDg+5E5+WKpa8XM9DQnuuMtg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,6 +91,116 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>EasyconnTalkie</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XIkxmnyk7Xax1BAbK72ovSU0WGQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			XJ125iTJMktZZ7rCRmyXIO7k/K0veMs90sQjtONlWZ0=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VEdE+mPDMMk0xCe8ZOLbfNBMq7M=
+			</data>
+			<key>hash2</key>
+			<data>
+			GbUci57BLROhjkok22OVszoHpv6KZph/51q/MLnPeFQ=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MdpVqfqD3BSOy1OPnqRqZD55Pr4=
+			</data>
+			<key>hash2</key>
+			<data>
+			dle4AJMecZH8Vy7JmLb+OOVlWLSBaL0x/T1Ev9Z5BP4=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v3GplgqCv8aNi1FghBYefW/KnOs=
+			</data>
+			<key>hash2</key>
+			<data>
+			IB1TKkNgKilSqrqd7r8S5MYfbq8JAoVB3mNhjBAcVWI=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreImage.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WHh5z0MoafoLRCVs9Vlb8fF2G/k=
+			</data>
+			<key>hash2</key>
+			<data>
+			LvrfsbCb03VNPMaCO3UBsLUT0r3etH37BIMQb6wJ70E=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5Dm79nlLTlsZ7skYUHOQ4SYCmaM=
+			</data>
+			<key>hash2</key>
+			<data>
+			vx7WVamPKOrRaRdvyalgljiGz/GMwEHZML8aLOQM2lc=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GVjneXANwNLiCfPhZw6G9dCz5Tc=
+			</data>
+			<key>hash2</key>
+			<data>
+			8eD2+hmRme38z6Wa/7ZAvu8aWlvDcmBnXbyw/OUTu2U=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i06PCFTIqBR/aBz2Vqi6s5Fifwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			cbnpIyv0m7EVJtchC7zuVKfATjInyw3J+aRdl2VC5WQ=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2KH3KemTbqI5VeX0VYhwazq8K1Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZRFhxnd8JVQtmUUobZs7UwfW8HobUEWFq1Zw2XfKAL0=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftUIKit.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			id2BKpZXCydSkbKPFmAZOaXImrE=
+			</data>
+			<key>hash2</key>
+			<data>
+			lci2Vue7ZVVnSo2fueYHdePYNZ5rHHejeHSlrl9RHPI=
+			</data>
+		</dict>
 		<key>Headers/EDEnumerate.h</key>
 		<dict>
 			<key>hash</key>
@@ -81,11 +227,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r+CN76BSps/+K7MnfC55xm6u+Rg=
+			CQIntgdxs1Iy+FtYqzfijKJ7Jzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			lsvc8BmLaJ7FJaA21iudP/gJl7rjPFaidnfPtRRheLk=
+			345QxpLRO24Qs7ERyyFjg2TVl4lg03EbesOwV1jM+dg=
 			</data>
 		</dict>
 		<key>Headers/EDUserInfo.h</key>
@@ -136,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MX2F2b482+DhiUpV4IfAngCRDY8=
+			BhvAF7jAzOtNH0pluxgqCQMQNyE=
 			</data>
 			<key>hash2</key>
 			<data>
-			PYyxauAn7C05eDrk8kfVyD4zn5Oq7xUAG+BAj4O+P0E=
+			6HdWyTB9qhQJNT4Tr6hQ2vmVBraN9ObVxBd8L9bbHxI=
 			</data>
 		</dict>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm64.swiftdoc</key>
@@ -158,11 +304,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zLJ5HCDVihVvBzWfIYZjRU+CPso=
+			i09bDg+5E5+WKpa8XM9DQnuuMtg=
 			</data>
 			<key>hash2</key>
 			<data>
-			71ui7p6YgGUqvHN31V+4XWnNCYGmoidwUPfqvo1wgfo=
+			gwje0x3OgHDodPtEDh6AtggbjszF0BDh+Tbw2dOPWZA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
