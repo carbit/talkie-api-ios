@@ -116,17 +116,17 @@
 }
 
 - (IBAction)logout:(id)sender {
-    [[EDTalkieManager shareInstance] oauthLogoutCallback:^(NSError *error) {
-        if (!error) {
-            [GlobalEntity sharedInstance].token = nil;
-            [GlobalEntity sharedInstance].openId = nil;
-            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"token"];
-            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"openID"];
-        }else{
-            NSLog(@"%@",error);
-            [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
-        }
-    }];
+//    [[EDTalkieManager shareInstance] oauthLogoutCallback:^(NSError *error) {
+//        if (!error) {
+//            [GlobalEntity sharedInstance].token = nil;
+//            [GlobalEntity sharedInstance].openId = nil;
+//            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"token"];
+//            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"openID"];
+//        }else{
+//            NSLog(@"%@",error);
+//            [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
+//        }
+//    }];
 }
 
 - (BOOL)checkIsLogin{
