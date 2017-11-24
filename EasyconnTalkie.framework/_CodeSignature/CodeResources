@@ -50,11 +50,11 @@
 		</data>
 		<key>Headers/EDTalkieManager.h</key>
 		<data>
-		CQIntgdxs1Iy+FtYqzfijKJ7Jzw=
+		Z6a09T4g1LE200Di4W8R0B5/mSo=
 		</data>
 		<key>Headers/EDUserInfo.h</key>
 		<data>
-		FZPyOGAMnji/D6Lb0ExWzSGLOmA=
+		W1vPJangSZy82V3g7j2/hDaVbfo=
 		</data>
 		<key>Headers/EasyconnTalkie-Swift.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BofefrW/Q7jIdu/B+UNjFT35kAs=
+		PaghYCmWwAGHNo6x2Y2igMH7etI=
 		</data>
 		<key>Modules/EasyconnTalkie.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -216,22 +216,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CQIntgdxs1Iy+FtYqzfijKJ7Jzw=
+			Z6a09T4g1LE200Di4W8R0B5/mSo=
 			</data>
 			<key>hash2</key>
 			<data>
-			345QxpLRO24Qs7ERyyFjg2TVl4lg03EbesOwV1jM+dg=
+			/QnQAwWElrRs7WHLIZZxlxVkovS8TDRB3jG4lR/rJnY=
 			</data>
 		</dict>
 		<key>Headers/EDUserInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FZPyOGAMnji/D6Lb0ExWzSGLOmA=
+			W1vPJangSZy82V3g7j2/hDaVbfo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZeOm/kWuVkfq+Fg1f/fUsHRDgmHawMNS+y7fKKHpjow=
+			Gq2DdalmuDT6Jp/3PMDR7a+6p85r8IZqygmyy63YKYc=
 			</data>
 		</dict>
 		<key>Headers/EasyconnTalkie-Swift.h</key>

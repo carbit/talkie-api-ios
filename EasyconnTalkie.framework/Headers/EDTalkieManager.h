@@ -265,4 +265,12 @@
  */
 - (MicrophoneState)getSpeakState;
 
+/**
+ *  设置当前用户昵称、头像和手机号信息
+ *  @param nick 昵称，传nil时表示不修改
+ *  @param avatar 用户头像url，传nil时表示不修改
+ *  @param mobile 手机号，传nil时表示不修改
+ */
+- (void)setUserNick:(NSString *)nick avatar:(NSString *)avatar mobile:(NSString *)mobile callback:(void(^)(NSError *error))callback;
+
 @end

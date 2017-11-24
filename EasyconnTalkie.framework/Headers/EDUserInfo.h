@@ -40,4 +40,11 @@
  */
 @property (nonatomic, assign) BOOL isSelf;
 
+//昵称
+@property (nonatomic, strong) NSString *aliasName;
+//头像
+@property (nonatomic, strong) NSString *avatar;
+//等级
+@property (nonatomic, assign) NSInteger layer;
+
 @end
